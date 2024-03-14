@@ -19,11 +19,11 @@ app.use("/book/api/rooms", roomRoute);
 app.use("/api/users", userRoute);
 app.use("/api/bookings", bookingRoute);
 
-app.use(express.static(path.join(__dirname, "./client/build")));
+// app.use(express.static(path.join(__dirname, "./client/build")));
 
-app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+// app.get("*", function (req, res) {
+//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// });
 
 const port = process.env.PORT || 5000;
 
