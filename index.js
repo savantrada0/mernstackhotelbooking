@@ -18,6 +18,9 @@ app.use("/api/rooms", roomRoute);
 app.use("/book/api/rooms", roomRoute);
 app.use("/api/users", userRoute);
 app.use("/api/bookings", bookingRoute);
+app.get("/", (req, res) => {
+  res.send("Welcome to hotel API");
+});
 
 // app.use(express.static(path.join(__dirname, "./client/build")));
 
